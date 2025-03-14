@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pujukan Special</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px;
+        }
+        .button {
+            background: #6a5acd;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .love-img {
+            width: 300px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="LoveImage.png" alt="Love Image" style="width: 150px; height: auto; display: block; margin: auto;">
+        <h1>Sayang, maafkan i? 💜</h1>
+        <p>Sayang merajuk sebab i buat silap. Tapi i janji akan jadi lebih baik. i rindu gelak tawa sayang. 😢</p>
+        <button class="button" onclick="showLove()">Maafkan i 💕</button>
+        <div id="loveMessage" style="display:none;">
+            <p>Terima kasih, sayang! Sayang lah dunia i. 💜</p>
+            <audio controls>
+                <source src="Lagu Twenties.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <p>I play this song for you, please forgive me? 😞💖</p>
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById('loveMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
